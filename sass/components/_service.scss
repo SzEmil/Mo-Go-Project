@@ -44,7 +44,83 @@
     align-items: flex-start;
     justify-content: space-between;
     width: 330px;
+
+    &:nth-child(1) {
+      .service-list__icon-box {
+        background-image: url('../images/home/service/alarm.png');
+      }
+    }
+    &:nth-child(1):hover {
+      .service-list__icon-box {
+        background-image: url('../images/home/service/alarm.gif');
+      }
+    }
+
+    &:nth-child(2) {
+      .service-list__icon-box {
+        background-image: url('../images/home/service/web.png');
+      }
+    }
+    &:nth-child(2):hover {
+      .service-list__icon-box {
+        background-image: url('../images/home/service/web.gif');
+      }
+    }
+
+    
+    &:nth-child(3) {
+      .service-list__icon-box {
+        background-image: url('../images/home/service/idea.png');
+      }
+    }
+    &:nth-child(3):hover {
+      .service-list__icon-box {
+        background-image: url('../images/home/service/idea.gif');
+      }
+    }
+    
+    &:nth-child(4) {
+      .service-list__icon-box {
+        background-image: url('../images/home/service/seo.png');
+      }
+    }
+    &:nth-child(4):hover {
+      .service-list__icon-box {
+        background-image: url('../images/home/service/seo.gif');
+      }
+    }
+    
+    &:nth-child(5) {
+      .service-list__icon-box {
+        background-image: url('../images/home/service/html.png');
+      }
+    }
+    &:nth-child(5):hover {
+      .service-list__icon-box {
+        background-image: url('../images/home/service/html.gif');
+      }
+    }
+    
+    &:nth-child(6) {
+      .service-list__icon-box {
+        background-image: url('../images/home/service/digital.png');
+      }
+    }
+    &:nth-child(6):hover {
+      .service-list__icon-box {
+        background-image: url('../images/home/service/digital.gif');
+      }
+    }
   }
+  &__icon-box {
+    min-width: 32px;
+    min-height: 32px;
+    max-width: 32px;
+    max-height: 32px;
+
+    background-size: cover;
+  }
+
   &__icon {
     min-width: 32px;
     min-height: 32px;
@@ -74,3 +150,4 @@
     grid-row-gap: 100px;
   }
 }
+

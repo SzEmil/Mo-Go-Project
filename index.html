@@ -30,29 +30,29 @@
           <nav>
             <ul class="nav-list">
               <li class="nav-list__item">
-                <a href="" class="nav-list__link">about</a>
+                <a id="home" class="nav-list__link">about</a>
               </li>
               <li class="nav-list__item">
-                <a href="" class="nav-list__link">service</a>
+                <a class="nav-list__link">service</a>
               </li>
               <li class="nav-list__item">
-                <a href="" class="nav-list__link">work</a>
+                <a class="nav-list__link">work</a>
               </li>
               <li class="nav-list__item">
-                <a href="" class="nav-list__link">blog</a>
+                <a class="nav-list__link">blog</a>
               </li>
               <li class="nav-list__item">
-                <a href="" class="nav-list__link">contact</a>
+                <a class="nav-list__link">contact</a>
               </li>
               <li class="nav-list__item">
-                <a href="" class="nav-list__link">
+                <a class="nav-list__link">
                   <svg class="nav-list__icon">
                     <use href="./images/icons.svg#shopping-cart"></use>
                   </svg>
                 </a>
               </li>
               <li class="nav-list__item">
-                <a href="" class="nav-list__link">
+                <a class="nav-list__link">
                   <svg class="nav-list__icon">
                     <use href="./images/icons.svg#search"></use>
                   </svg>
@@ -82,9 +82,7 @@
 
             <ul class="service-list">
               <li class="service-list__item">
-                <svg class="service-list__icon">
-                  <use href="./images/icons.svg#search"></use>
-                </svg>
+                <div class="service-list__icon-box"></div>
                 <div class="service-list__description">
                   <p class="service-list__description-title">Photography</p>
                   <p class="service-list__description-text">
@@ -95,9 +93,7 @@
               </li>
 
               <li class="service-list__item">
-                <svg class="service-list__icon">
-                  <use href="./images/icons.svg#search"></use>
-                </svg>
+                <div class="service-list__icon-box"></div>
                 <div class="service-list__description">
                   <p class="service-list__description-title">Web Design</p>
                   <p class="service-list__description-text">
@@ -108,9 +104,7 @@
               </li>
 
               <li class="service-list__item">
-                <svg class="service-list__icon">
-                  <use href="./images/icons.svg#search"></use>
-                </svg>
+                <div class="service-list__icon-box"></div>
                 <div class="service-list__description">
                   <p class="service-list__description-title">Creativity</p>
                   <p class="service-list__description-text">
@@ -121,9 +115,7 @@
               </li>
 
               <li class="service-list__item">
-                <svg class="service-list__icon">
-                  <use href="./images/icons.svg#search"></use>
-                </svg>
+                <div class="service-list__icon-box"></div>
                 <div class="service-list__description">
                   <p class="service-list__description-title">SEO</p>
                   <p class="service-list__description-text">
@@ -134,9 +126,7 @@
               </li>
 
               <li class="service-list__item">
-                <svg class="service-list__icon">
-                  <use href="./images/icons.svg#search"></use>
-                </svg>
+                <div class="service-list__icon-box"></div>
                 <div class="service-list__description">
                   <p class="service-list__description-title">CSS/HTML</p>
                   <p class="service-list__description-text">
@@ -147,9 +137,7 @@
               </li>
 
               <li class="service-list__item">
-                <svg class="service-list__icon">
-                  <use href="./images/icons.svg#search"></use>
-                </svg>
+                <div class="service-list__icon-box"></div>
                 <div class="service-list__description">
                   <p class="service-list__description-title">Digital</p>
                   <p class="service-list__description-text">
@@ -381,7 +369,8 @@
       <div class="container">
         <div class="footer__wrapper">
           <p class="footer__info">
-            © 2016 MoGo free PSD template by <a href="/">Laaqiq</a>
+            © 2016 MoGo free PSD template by
+            <a href="/" class="footer__info--red">Laaqiq</a>
           </p>
           <form class="form">
             <input
@@ -402,6 +391,7 @@
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"
     ></script>
+    <script type="module" src="./js/active-link.js"></script>
     <!-- <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script> -->
   </body>
