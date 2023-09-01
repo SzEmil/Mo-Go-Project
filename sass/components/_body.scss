@@ -1,0 +1,18 @@
+body {
+  font-family: 'Montserrat', 'Roboto', 'Raleway', sans-serif;
+  background-color: $body-background-color;
+  color: $text-color-primary;
+  margin: auto;
+}
+@media screen and (max-width: 768px) {
+  body {
+    min-width: 320px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    // max-width: 1600px;
+    width: 100%;
+  }
+}
