@@ -6,7 +6,7 @@
       rgba(251, 226, 137, 0.95) 0%,
       rgba(244, 140, 130, 0.9) 100%
     ),
-    url('../../images/home/baner-mobile.jpg');
+    url('../images/home/baner-mobile.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll;
@@ -60,7 +60,7 @@
         rgba(251, 226, 137, 0.95) 0%,
         rgba(244, 140, 130, 0.9) 100%
       ),
-      url('../../images/home/baner-tablet.jpg');
+      url('../images/home/baner-tablet.jpg');
   }
 }
 @media screen and (min-width: 1200px) {
@@ -70,7 +70,7 @@
         rgba(251, 226, 137, 0.95) 0%,
         rgba(244, 140, 130, 0.9) 100%
       ),
-      url('../../images/home/baner-desktop.jpg');
+      url('../images/home/baner-desktop.jpg');
   }
 }
 
@@ -83,7 +83,7 @@
         rgba(251, 226, 137, 0.95) 0%,
         rgba(244, 140, 130, 0.9) 100%
       ),
-      url('../../images/home/baner-desktop.jpg');
+      url('../images/home/baner-desktop.jpg');
     background-position: center;
   }
 }
