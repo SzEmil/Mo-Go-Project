@@ -35,29 +35,32 @@
   }
 }
 .service-list {
-  display: flex;
-  width: 100%;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+
   &__item {
     display: flex;
     align-items: flex-start;
-    max-width: 330px;
+    justify-content: space-between;
+    width: 330px;
   }
   &__icon {
-    width: 32px;
-    height: 30px;
+    min-width: 32px;
+    min-height: 32px;
+    max-width: 32px;
+    max-height: 32px;
     fill: #95e1d3;
   }
   &__description {
+    max-width: 270px;
     &-title {
       font-size: 14px;
       text-transform: uppercase;
       color: #333333;
       font-weight: 400;
 
-      padding-bottom: 20px;
+      padding-bottom: 10px;
     }
     &-text {
       font-size: 15px;
@@ -66,5 +69,8 @@
       font-weight: 400;
       font-family: 'Roboto';
     }
+  }
+  &:nth-child(3n + 1) {
+    grid-row-gap: 100px;
   }
 }

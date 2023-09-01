@@ -1,0 +1,112 @@
+.team {
+  padding-top: 50px;
+  padding-bottom: 100px;
+  &__wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__slogan-text {
+    font-size: 24px;
+    color: #333333;
+    font-weight: 400;
+    font-family: 'Kaushan Script';
+    text-align: center;
+
+    padding-bottom: 20px;
+  }
+  &__title {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #333333;
+    font-weight: 700;
+    font-family: 'Montserrat';
+    text-align: center;
+  }
+  &__line {
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+
+    margin: 50px 0;
+  }
+  &__description {
+    width: 960px;
+    height: 130px;
+    font-size: 15px;
+    line-height: 24px;
+    color: #999999;
+    font-weight: 400;
+    font-family: 'Roboto';
+    text-align: center;
+  }
+}
+
+.team-list {
+  &__item {
+    &:hover {
+      .card__image-box {
+        transform: translate(-20px, -20px);
+      }
+      .card-layout {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.card-backdrop {
+  width: 380px;
+  height: 470px;
+  background-color: $card-background-color;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__image-box {
+    width: 100%;
+    height: 100%;
+
+    transition: transform 200ms ease;
+  }
+  &__img {
+    display: block;
+    width: 100%;
+    max-height: 100%;
+  }
+
+  &__name {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #333333;
+    font-weight: 400;
+    font-family: 'Montserrat';
+
+    padding-top: 25px;
+    padding-bottom: 10px;
+  }
+  &__job-name {
+    font-size: 15px;
+    line-height: 24px;
+    color: #999999;
+    font-weight: 300;
+    font-style: italic;
+    font-family: 'Roboto';
+  }
+}
+.card-layout {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: linear-gradient(0deg, #f1e290da 0%, #ea8b89d7 100%);
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+
+  transition: opacity 200ms ease;
+}
