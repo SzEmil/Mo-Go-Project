@@ -1,0 +1,86 @@
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  min-height: 100vh;
+  padding: 48px 0 48px 40px;
+  background: linear-gradient(
+    0deg,
+    rgba(251, 226, 137, 0.95) 0%,
+    rgba(244, 140, 130, 0.95) 100%
+  );
+  z-index: 999;
+
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+
+  &.is-open {
+    transform: translateX(0);
+  }
+  &__btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 36px;
+    font-weight: 700;
+    color: $text-color-secondary;
+
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    transition: color 200ms ease;
+
+    &:hover {
+      color: $text-hover-color;
+    }
+  }
+}
+.mobile-nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+
+  &__item {
+    display: inline;
+    position: relative;
+    &:hover {
+      .nav-list__icon {
+        fill: $text-hover-color;
+      }
+      .nav-list__link {
+        color: $text-hover-color;
+      }
+      .nav-list__link::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -11px;
+        width: 100%;
+        height: 2px;
+        background-color: $text-hover-color;
+      }
+    }
+  }
+  &__link {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: $text-color-secondary;
+    font-weight: 400;
+    font-family: 'Montserrat';
+    text-align: center;
+    cursor: pointer;
+  }
+  &__icons-box {
+    display: flex;
+    gap: 50px;
+  }
+  &__icon {
+    fill: $text-color-secondary;
+    width: 24px;
+    height: 24px;
+    display: inline;
+
+    transition: fill 200ms ease;
+  }
+}

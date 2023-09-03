@@ -11,7 +11,7 @@
 
   &__slogan-text {
     font-size: 24px;
-    color: #333333;
+    color: $section-title-color;
     font-weight: 400;
     font-family: 'Kaushan Script';
     text-align: center;
@@ -21,7 +21,7 @@
   &__title {
     font-size: 30px;
     text-transform: uppercase;
-    color: #333333;
+    color: $section-title-color;
     font-weight: 700;
     font-family: 'Montserrat';
     text-align: center;
@@ -29,16 +29,17 @@
   &__line {
     width: 60px;
     height: 3px;
-    background-color: #f38181;
+    background-color: $section-line-color;
 
     margin: 50px 0;
   }
   &__description {
-    width: 960px;
+    width: 100%;
+    max-width: 960px;
     height: 130px;
     font-size: 15px;
     line-height: 24px;
-    color: #999999;
+    color: $description-color;
     font-weight: 400;
     font-family: 'Roboto';
     text-align: center;
@@ -46,26 +47,20 @@
 }
 
 .team-list {
+  padding-top: 20px;
   width: 100%;
+  gap: 40px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  &__item {
-    &:hover {
-      .card__image-box {
-        transform: translate(-20px, -20px);
-      }
-      .card-layout {
-        opacity: 1;
-        visibility: visible;
-      }
-    }
-  }
+  justify-content: center;
 }
 
 .card-backdrop {
-  width: 380px;
-  height: 470px;
+  min-width: 300px;
+  width: 100%;
+  max-width: 380px;
+  height: 100%;
+  max-height: 470px;
   background-color: $card-background-color;
 }
 .card {
@@ -89,7 +84,7 @@
   &__name {
     font-size: 14px;
     text-transform: uppercase;
-    color: #333333;
+    color: $description-title-color;
     font-weight: 400;
     font-family: 'Montserrat';
 
@@ -99,7 +94,7 @@
   &__job-name {
     font-size: 15px;
     line-height: 24px;
-    color: #999999;
+    color: $description-color;
     font-weight: 300;
     font-style: italic;
     font-family: 'Roboto';
@@ -123,10 +118,10 @@
 }
 .card-layout-socials {
   display: inline-flex;
-  background-color: #fce38a;
+  background-color: $primary-color;
 
   &__item {
-    border-right: 0.1px solid #f38181;
+    border-right: 0.1px solid $secondary-color;
 
     transition: background-color 200ms ease;
 
@@ -136,13 +131,13 @@
 
     &:hover {
       .card-layout-socials__icon {
-        fill: white;
+        fill: $icon-default-color;
       }
-      background-color: #f38181;
+      background-color: $secondary-color;
     }
   }
   &__icon {
-    fill: #f38181;
+    fill: $secondary-color;
     width: 26px;
     height: 26px;
 
@@ -153,6 +148,91 @@
       display: flex;
       align-items: center;
       justify-content: center;
+    }
+  }
+}
+
+.card-mobile-layout {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.6);
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    justify-content: space-between;
+  }
+  &__icon-box {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__icon {
+    fill: $icon-default-color;
+    width: 26px;
+    height: 26px;
+
+    transition: fill 200ms ease;
+
+    &:hover {
+      fill: $secondary-color;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .team-list {
+    justify-content: space-evenly;
+    gap: 40px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .card-mobile-layout {
+    display: none;
+  }
+  .team-list {
+    justify-content: space-between;
+    gap: 0;
+    padding-top: 0;
+
+    &__item {
+      &:hover {
+        .card__image-box {
+          transform: translate(-20px, -20px);
+        }
+        .card-layout {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+  }
+  .team {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    &__slogan-text {
+      font-size: 24px;
+
+      padding-bottom: 20px;
+    }
+    &__title {
+      font-size: 30px;
+    }
+    &__line {
+      margin: 50px 0;
+    }
+    &__description {
+      width: 960px;
+      height: 130px;
+      font-size: 15px;
+      line-height: 24px;
     }
   }
 }

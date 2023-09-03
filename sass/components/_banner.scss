@@ -6,7 +6,7 @@
       rgba(251, 226, 137, 0.95) 0%,
       rgba(244, 140, 130, 0.9) 100%
     ),
-    url('../images/home/baner-mobile.jpg');
+    url('../images/home/banner/baner-mobile.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll;
@@ -24,33 +24,69 @@
   text-align: center;
 
   &__title-slogan {
-    font-size: 72px;
-    color: #ffffff;
+    font-size: 28px;
+    color: $text-color-secondary;
     font-weight: 400;
     font-family: 'Kaushan Script';
 
-    padding-bottom: 50px;
+    padding-bottom: 30px;
   }
   &__title-primary {
-    font-size: 150px;
-    line-height: 140px;
+    font-size: 58px;
+    line-height: 68px;
     text-transform: uppercase;
-    color: #ffffff;
+    color: $text-color-secondary;
     font-weight: 700;
     font-family: 'Montserrat';
-    max-width: 800px;
+    max-width: 400px;
   }
   &__btn {
-    margin-top: 130px;
+    margin-top: 80px;
     padding: 10px 40px;
     background-color: rgba(0, 0, 0, 0);
     font-size: 14px;
     text-transform: uppercase;
-    color: #ffffff;
+    color: $text-color-secondary;
     font-weight: 700;
     font-family: 'Montserrat';
-    border: 3px solid #ffffff;
+    border: 3px solid $text-color-secondary;
     cursor: pointer;
+  }
+}
+@media screen and (min-width: 500px) {
+  .slogan {
+    text-align: center;
+
+    &__title-slogan {
+      font-size: 34px;
+      padding-bottom: 40px;
+    }
+    &__title-primary {
+      font-size: 76px;
+      line-height: 92x;
+      max-width: 500px;
+    }
+    &__btn {
+      margin-top: 100px;
+    }
+  }
+}
+@media screen and (min-width: 600px) {
+  .slogan {
+    text-align: center;
+
+    &__title-slogan {
+      font-size: 42px;
+      padding-bottom: 40px;
+    }
+    &__title-primary {
+      font-size: 92px;
+      line-height: 112px;
+      max-width: 600px;
+    }
+    &__btn {
+      margin-top: 120px;
+    }
   }
 }
 @media screen and (min-width: 768px) {
@@ -60,7 +96,24 @@
         rgba(251, 226, 137, 0.95) 0%,
         rgba(244, 140, 130, 0.9) 100%
       ),
-      url('../images/home/baner-tablet.jpg');
+      url('../images/home/banner/baner-tablet.jpg');
+  }
+
+  .slogan {
+    text-align: center;
+
+    &__title-slogan {
+      font-size: 58px;
+      padding-bottom: 50px;
+    }
+    &__title-primary {
+      font-size: 120px;
+      line-height: 130px;
+      max-width: 750px;
+    }
+    &__btn {
+      margin-top: 120px;
+    }
   }
 }
 @media screen and (min-width: 1200px) {
@@ -70,12 +123,30 @@
         rgba(251, 226, 137, 0.95) 0%,
         rgba(244, 140, 130, 0.9) 100%
       ),
-      url('../images/home/baner-desktop.jpg');
+      url('../images/home/banner/baner-desktop.jpg');
+  }
+
+  .slogan {
+    text-align: center;
+
+    &__title-slogan {
+      font-size: 72px;
+      padding-bottom: 50px;
+    }
+    &__title-primary {
+      font-size: 150px;
+      line-height: 140px;
+      max-width: 800px;
+    }
+    &__btn {
+      margin-top: 130px;
+    }
   }
 }
 
 @media screen and (min-device-pixel-ratio: 2),
   screen and (min-resolution: 192dpi),
+  screen and (max-width: 767px),
   screen and (min-resolution: 2dppx) {
   .banner {
     background-image: linear-gradient(
@@ -83,7 +154,34 @@
         rgba(251, 226, 137, 0.95) 0%,
         rgba(244, 140, 130, 0.9) 100%
       ),
-      url('../images/home/baner-desktop.jpg');
-    background-position: center;
+      url('../images/home/banner/baner-mobile2x.jpg');
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-width: 768px),
+  screen and (min-resolution: 2dppx) {
+  .banner {
+    background-image: linear-gradient(
+        0deg,
+        rgba(251, 226, 137, 0.95) 0%,
+        rgba(244, 140, 130, 0.9) 100%
+      ),
+      url('../images/home/banner/baner-tablet2x.jpg');
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-width: 1200px),
+  screen and (min-resolution: 2dppx) {
+  .banner {
+    background-image: linear-gradient(
+        0deg,
+        rgba(251, 226, 137, 0.95) 0%,
+        rgba(244, 140, 130, 0.9) 100%
+      ),
+      url('../images/home/banner/baner-desktop2x.jpg');
   }
 }
